@@ -1,9 +1,11 @@
+import css from "./Contact.module.css"
+
 import { FaUser, FaPhoneAlt } from "react-icons/fa";
 
 function Contact({ data: { id, name, number }, deleteContact }) {
   return (
-    <div >
-      <div >
+    <li className={css.item}>
+      <div className={css.wrapper}>
         <p >
            <FaUser />
           {name}
@@ -13,7 +15,7 @@ function Contact({ data: { id, name, number }, deleteContact }) {
           {number}
         </p>
       </div>
-      <button
+      <button className={css.button}
         
         onClick={() => {
           deleteContact(id);
@@ -21,7 +23,7 @@ function Contact({ data: { id, name, number }, deleteContact }) {
       >
         Delete
       </button>
-    </div>
+    </li>
   );
 }
 

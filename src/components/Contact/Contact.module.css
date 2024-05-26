@@ -1,0 +1,20 @@
+.item {
+    display: flex;
+    gap: 30px;
+    width: 480px;
+    border: 2px solid rgb(117, 77, 77);
+    border-radius: 8px;
+}
+
+.wrapper {
+    padding: 10px;
+}
+
+.button {
+    background-color: red;
+    color: white;
+    font-size: 32px;
+    width: 150px;
+    height: 100px;
+    margin: auto;
+}

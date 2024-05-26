@@ -1,9 +1,9 @@
-
+import css from "./ContactList.module.css"
 import Contact from "../Contact/Contact";
 
 function ContactList({ contacts, deleteContact }) {
   return (
-    <div>
+    <ul className={css.list}>
       {contacts.map((contact) => (
         <Contact
           data={contact}
@@ -11,7 +11,7 @@ function ContactList({ contacts, deleteContact }) {
           deleteContact={deleteContact}
         />
       ))}
-    </div>
+    </ul>
   );
 }
 
